@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.header{
+    /* border: 2px solid red; */
+    background-color: rgb(12, 172, 159);
+    color: white;
+}
+.header h1{
+    padding: 20px 10px 0px 10px;
+}
+
+.underline{
+    width: 280px;
+    border: 1px solid white;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+.header p{
+    padding-left: 10px;
+}
+
+.fa-solid{
+    color: rgb(12, 172, 159);
+}
+
+span{
+    font-size: 12px;
+}
+
+.skills{
+    padding-top: 10px;
+}
+
+.skills h3{
+    color: rgb(12, 172, 159);
+}
+
+.underline1{
+    border: 1px solid rgb(12, 172, 159);
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.skills p , .skills span{
+    /* border: 1px solid rgb(12, 172, 159); */
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(12, 172, 159);
+    /* margin-top: 0px; */
+}
+
+.language h3{
+    color: rgb(12, 172, 159);
+}
+
+.language p{
+    font-size: 13px;
+}
+
+.interest h3{
+    color: rgb(12, 172, 159);
+}
+
+.interest p{
+    font-size: 13px;
+    border: 1.5px solid rgb(140, 230, 222);
+    width: fit-content;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.college h3{
+    color: rgb(12, 172, 159);
+}
+
+ .underline2{
+    width: 90%;
+    /* color: rgb(12, 172, 159); */
+    border: 1px solid rgb(12, 172, 159);
+}
+
+h4{
+    color: rgb(12, 172, 159);
+}
+
+ .s1{
+    color: black;
+    font-size: 13px;
+    font-style: normal;
+}
+
+aside span , .jaipur{
+    color: rgb(12, 172, 159);
+    font-style: italic;
+}
+
+li{
+    font-size: 12px;
+    list-style-type: square;
+}
+
+#college{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hsc , .ssc{
+    margin-top: 50px;
+}
+
+.certificates{
+    margin-top: 60px;
+}
+
+.jaipur{
+    color: rgb(12, 172, 159);
+    font-style: italic;
+    font-size: 12px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix signup</title>
+    <link rel="stylesheet" href="css/signup_page.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_fadetop"></div>
+        <nav>
+            <img src="images/logo.png" alt="" class="logo">
+        </nav>
+        <div class="header-content">
+            <form action="" class="email-signin">
+                <h2>Sign In</h2>
+                <div class="input-email">
+                <input type="email" type="number" placeholder="Email or phone number" required="">
+                </div>
+                <div class="input-password">
+                <input type="password" placeholder="Password" required="">
+                </div>
+                <div class="signin-btn">
+                <button type="submit" class="btn"> <a href="profile_page.html">Sign In</a></button>
+                </div>
+                <div class="support">
+                    <div class="remember">
+                    <span><input type="checkbox" id="rem" checked></span>
+                    <label for="rem"><span>Remember me</span></label>
+                    </div>
+                    <p><a href="https://www.netflix.com/in/LoginHelp">Need help?</a></p>
+                </div>
+            </form>
+            <div class="signup-foot">
+                <div class="new-to-netflix">
+                <p>New to Netflix?<span> <a href="https://www.netflix.com/in/">Sign up now.</a></span></p></div>
+                <div class="learn-more">
+                 <p><span>This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+                <button class="learn-more-btn" id="learn-btn" onclick="visible()">Learn more</button></p>
+
+                <div class="hide" id="hide"><span id="">The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy" id="privacy-link" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" id="tos-link" target="_blank">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).</span></div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="header_fadebottom"></div>
+
+        <div class="footer">
+            <p>Questions? Call <a class="footer-top-a" href="tel:000-800-919-1694" style="text-decoration: none;">000-800-919-1694</a></p>
+            <div class="footer-items">
+                <ul>
+                    <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                    </ul>
+                    <ul>
+                    <li><a href="https://help.netflix.com/en/">Help Centre</a></li>
+                    <li><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+                    </ul>
+                    <ul>
+                    <li><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+                    </ul>
+                    <ul>
+                    <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+                </ul>
+            </div>
+    
+         <div class="language-bottom">
+         <button id="language-btn"> <img src="images/disco-ball-icon.png" alt="" id="disco-ball"> English <img src="images/down-icon.png">
+            </button>
+            </div>
+            </div>
+    </div>
+    <script src="js/signup.js"></script>
+    <!-- <script>
+        // document.getElementById("learn-btn").addEventListener("click",colorChange);
+        // function colorChange(){
+        //     document.getElementById("hide").style.visibility = "visible";
+        // }
+
+           function visible(){
+            document.getElementById("hide").style.visibility="visible";
+           }
+    </script> -->
+</body>
+</html>
