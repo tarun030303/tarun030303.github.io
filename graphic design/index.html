@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .left-header{
+        width: 40%;
+    }
+
+    .right-header{
+        width: 60%;
+    }
+
+    .header .right-header ul{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .right-header ul li button{
+        padding: 10px 40px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+        outline: 0;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,0.7);
+    }
+
+    .right-header ul li button:hover{
+        background-color: rgb(49, 41, 41);
+    }
+
+    .header .left-header img{
+        width: 50px;
+        margin-left: 100px;
+    }
+
+    .header2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: hsl(0, 11%, 15%);
+        height: 500px;
+    }
+
+    .header2 img{
+        width: 500px;
+    }
+
+    .header2 .headline{
+        width: 50%;
+        font-size: larger;
+        margin-top: 100px;
+    }
+
+    .headline h1{
+        color: aliceblue;
+        letter-spacing: 5px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 350px;
+    }
+
+    h1,p {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button[type="submit"] {
+      width: 90%;
+      margin-left: 20px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+    button[type="submit"]:hover{
+        background-color: #86ce88;
+    }
+
+    .tagline p{
+        font-size: larger;
+        color: #356937;
+        position: absolute;
+        left: 28%;
+        top: 1030px;
+    }
+
+    .footer{
+        position: relative;
+        height: 500px;
+        /* border: 2px solid red; */
+    }
+
+    .footer img{
+        width: 400px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.212);
+    }
+
+    .question{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer p{
+        width: 250px;
+    }
+
+    .footer .experience{
+        position: absolute;
+        top: 180px;
+        left: 50px;
+    }
+
+    .footer .professional{
+        position: absolute;
+        top: 180px;
+        right: 50px;
+    }
+
+    .footer .creative{
+        position: absolute;
+        bottom: 0px;
+        left: 40%;
+    }
+
+    .footer span{
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .footer p{
+        font-size: small;
+    }
+
+    footer{
+        margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #473f3f;
+    color: white;
+}
+
+.socialmedia .fa-brands{
+    margin-left: 20px;
+    font-size: 30px;
+    /* margin-top: 20px; */
+}
+
+.fa-facebook:hover{
+    color: rgb(119, 118, 238);
+}
+
+.fa-instagram:hover{
+    color: rgb(142, 89, 110);
+}
+
+.fa-twitter:hover{
+    color: rgb(118, 118, 238);
+}
+
+footer ul{
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+ 
+  </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <img src="logo1.jpg" alt="">
+        </div>
+        <div class="right-header">
+            <ul>
+                <li>Work</li>
+                <li>Services</li>
+                <li>Clients</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li><Button id="contact" onclick="myFunction()">Contact</Button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header2">
+    <div class="loop">
+        <img src="looping-gifs.gif" alt="">
+    </div>
+    <div class="headline">
+        <h1>"Transforming</h1>
+        <h1>Ideas into</h1> 
+        <h1>Stunning Designs"</h1>
+    </div>
+    </div>
+
+  <div class="container">
+    <h1>Get Started Today!</h1>
+    <p>Simply fill out the form below and our team will get in touch with you shortly:</p>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="contactNo">Contact No.:</label>
+      <input type="text" id="contactNo" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="tagline">
+    <p>"Unlock Your Brand's Potential with Professional Graphics."</p>
+  </div>
+
+  <div class="footer">
+    <div class="question">
+        <h3>Why Choose Us?</h3>
+    <img src="question mark.png" alt="">
+    </div>
+    <div class="experience">
+        <p><span>1. Experience:<br></span> With over 10 years of experience in the industry, we have successfully completed numerous design projects for clients across various sectors.</p>
+    </div>
+
+    <div class="professional">
+    <p><span>2. Professionalism:<br></span> We take pride in our professionalism and commitment to delivering high-quality designs that exceed our clients' expectations.</p>
+    </div>
+        
+    <div class="creative">
+    <p><span>3. Creative Excellence:<br></span> Our designers are passionate about their craft and continuously push boundaries to create innovative and eye-catching designs.</p>
+    </div>
+</div>
+
+<footer>
+    <ul>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Web Accessibility</li>
+    </ul>
+    <div class="socialmedia">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</footer>
+
+  <script>
+    // JavaScript
+
+    function myFunction() {
+  window.scrollBy(0, 600);
+}
+
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      var name = document.getElementById("name").value;
+      var contactNo = document.getElementById("contactNo").value;
+
+      
+      document.getElementById("name").value = "";
+      document.getElementById("contactNo").value = "";
+
+      alert("Thank you for contacting us!");
+      window.location.href = "thank_you.html";
+    });
+  </script>
+</body>
+</html>
